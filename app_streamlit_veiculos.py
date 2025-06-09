@@ -81,5 +81,5 @@ if not df.empty:
 
 else:
     st.warning("Nenhum dado encontrado para exibir.")
-    
+    # Sincronização após git pull
 
