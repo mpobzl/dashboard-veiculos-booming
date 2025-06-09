@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="Dashboard de Veículos", layout="centered")
 
 # 📥 Caminho do seu arquivo Excel
-excel_path = r"C:\Users\Familia\OneDrive\Documentos\03 - Marcelo\Fictor\dados_veiculos_enriquecidos.xlsx"
+excel_path = r"dados_veiculos_enriquecidos.xlsx"
 
 # 📁 Caminho da pasta com as imagens
 images_path = r"C:\Users\Familia\images"
@@ -73,7 +73,7 @@ if not df.empty:
             """
             <div style='color: red; font-weight: bold; margin-top: 30px;'>
                 🚨 Atenção: Este produto é um trial produzido pela <strong>Booming Marketing IA</strong>.<br>
-                Não deve ser compartilhado com terceiros e trata-se de material de validação de projeto.
+                Não deve ser compartilhado com terceiros por trata-se de material de validação de projeto.
             </div>
             """,
             unsafe_allow_html=True
