@@ -5,11 +5,11 @@ import os
 # 🛠️ Configuração inicial da página
 st.set_page_config(page_title="Dashboard de Veículos", layout="centered")
 
-# 📥 Caminho do seu arquivo Excel
-excel_path = r"dados_veiculos_enriquecidos.xlsx"
+# 📥 Caminho do seu arquivo Excel (uso relativo para funcionar no GitHub e Streamlit Cloud)
+excel_path = "dados_veiculos_enriquecidos.xlsx"
 
-# 📁 Caminho da pasta com as imagens
-images_path = r"C:\Users\Familia\images"
+# 📁 Caminho da pasta com as imagens (uso relativo para funcionar no repositório)
+images_path = "images"
 
 # 🚗 Título da aplicação
 st.title("🚗 Dashboard de Dados Técnicos de Veículos")
@@ -73,7 +73,7 @@ if not df.empty:
             """
             <div style='color: red; font-weight: bold; margin-top: 30px;'>
                 🚨 Atenção: Este produto é um trial produzido pela <strong>Booming Marketing IA</strong>.<br>
-                Não deve ser compartilhado com terceiros por trata-se de material de validação de projeto.
+                Não deve ser compartilhado com terceiros por tratar-se de material de validação de projeto.
             </div>
             """,
             unsafe_allow_html=True
